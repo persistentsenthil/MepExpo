@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .span {
+          position: fixed;
+          font-size: 50px;
+        }
+        .bac
+        {
+            position: fixed;
+            inset: 0%;
+            background-color: black;
+            height: 100%;
+            width: 100%;
+        }
+        .time
+        {
+            position: absolute;
+            font-size: larger;
+            color: white;
+            font-family: outfit;
+        }
+        .html,body{
+            height: 500px;
+            width: 500px;
+        }
+      </style>
+      <div class="bac"></div>
+      <div id="timer" class="time">
+        <div id="hrs1">00:</div>
+        <div id="min1">00:</div>
+        <div id="sec1">00</div>
+      </div>
+      <button id="start">Start</button>
+      <script src="background.js"></script>
+      <script src="popup.js"></script>
+</body>
+</html>

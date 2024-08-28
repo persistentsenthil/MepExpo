@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+</head>
+<body>
+    <style>
+        .back
+        {
+            position: fixed;
+            inset: 0%;
+            height: 100%;
+            width: 100%;
+            background-color: black;
+        }
+        .whi
+        {
+            position: fixed;
+            left: 0%;
+            bottom: 0%;
+            height: 100%;
+            width: 100%;
+            background-color: white;
+        }
+        @keyframes growTop{
+            from {
+                height: 100%;
+            }
+            to{
+                height: 0%;
+            }
+        }
+        @keyframes growDown{
+            from {
+                height: 0%;
+            }
+            to{
+                height: 100%;
+            }
+        }
+        .text
+        {
+            position: fixed;
+            top: 10%;
+            left: 10%;
+            width: 15px;
+            font-size: 100px;
+            font-family: 'outfit';
+            color: white;
+            mix-blend-mode: difference;
+        }
+        .des
+        {
+            position: fixed;
+            top: 38%;
+            left: 60%;
+            font-size: 25px;
+            font-family: 'outfit';
+            color: white;
+            mix-blend-mode: difference;
+        }
+        .close
+        {
+            position: fixed;
+            top: 50%;
+            left: 60%;
+            width: 180px;
+            border-radius: 150px;
+            font-size: 20px;
+            padding: 15px;
+            font-family: 'outfit';
+            color: black;
+            mix-blend-mode: difference;
+        }
+        .attempts
+        {
+            position: fixed;
+            top: 28%;
+            left: 60%;
+            font-size: 75px;
+            font-family: 'outfit';
+            color: white;
+            mix-blend-mode: difference;
+        }
+        .continue
+        {
+            position: fixed;
+            top: 50%;
+            left: 75%;
+            width: 200px;
+            border-radius: 150px;
+            font-size: 20px;
+            padding: 15px;
+            font-family: 'outfit';
+            color: white;
+            background-color: transparent;
+            border: white 2px solid;
+            mix-blend-mode: difference;
+        }
+    </style>
+    <div class="back" id="rect1"></div>
+    <div class="whi" id="rect"></div>
+    <p class="text" id="text">BREATH IN</p>
+    <div class="attempts" id="att">6515</div>
+    <p class="des">attempts made opening social media</p>
+    <button class="close" id="close">Close Youtube</button>
+    <button class="continue" id="continue">Continue Youtube</button>
+    <script src="medi.js"></script>
+</body>
+</html>
